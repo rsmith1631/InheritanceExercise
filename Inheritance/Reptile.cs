@@ -17,7 +17,7 @@ namespace Inheritance
         public string Habitat { get; set; }
         public string Color { get; set; }
         public bool Growtail { get; set; }
-        public int Scaly { get; set; }
+        public bool Scaly { get; set; }
 
     }
 }
