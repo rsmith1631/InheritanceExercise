@@ -28,12 +28,36 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
-
+            var pidgeon = new Bird();
+            pidgeon.Beak = "Short and sharp";
+            pidgeon.Food = "Worms";
+            pidgeon.GroundAnimal = false;
+            pidgeon.Name = "Ruby";
+            pidgeon.Legs = 2;
+            pidgeon.Eyes = 2;
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            var lizard = new Reptile();
+            lizard.Name = "Slizard";
+            lizard.Legs = 4;
+            lizard.GroundAnimal = true;
+            lizard.Color = "Green";
+            lizard.Eyes = 2;
+            lizard.Habitat = "Desert";
+
+            var pets = new Animal[] { pidgeon, lizard };
+            foreach (var pet in pets)
+            {
+                Console.WriteLine($"Pet's Name: Goes by {pet.Name} and knows it's name!");
+                Console.WriteLine($"How many legs?: It has {pet.Legs}.");
+                Console.WriteLine($"How many eyes does it have?: It has {pet.Eyes} and great vision.");
+                Console.WriteLine($"Is it a ground animal?: {pet.GroundAnimal}");
+                Console.WriteLine("");
+            }
         }
     }
 }
+
